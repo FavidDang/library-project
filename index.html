@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="modal">
+        <span class="close">&times;</span>
+        <form>
+            <label id="title-label">Title</label>
+            <input type="text" name="title-label" id="title" required>
+
+            <label id="author-label">Author</label>
+            <input type="text" name="author-label" id="author" required>
+
+            <label id="pages-label">Pages</label>
+            <input type="number" name="pages-label" id="pages" required>
+
+            <div>
+                <label id="read-status-label">Read?</label>
+                <input type="checkbox" name="read-status-label" id="read-status">            
+            </div>
+            
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <div id="library">
+        <table>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read Status</th>
+            <th>Toggle Read</th>
+        </table>
+    </div>
+    <button id="add">Add Book</button>
     <script src="main.js"></script>
 </body>
 </html>
