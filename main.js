@@ -63,6 +63,8 @@ function addBookToTable(book) {
 
     toggleRead.index = book.index;
     remove.index = book.index;
+    toggleRead.classList.add('clickable');
+    remove.classList.add('clickable');
 
     title.innerHTML = book.title;
     author.innerHTML = book.author;
